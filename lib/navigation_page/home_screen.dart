@@ -177,7 +177,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       width: w * .2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: contianer_color[index],
+                        color: isTrue[index]
+                            ? contianer_color[index]
+                            : Colors.white10,
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

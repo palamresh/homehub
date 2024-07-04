@@ -1,6 +1,7 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:homehub/user_list/living_room.dart';
 
 class Room extends StatefulWidget {
   const Room({super.key});
@@ -56,35 +57,41 @@ class _RoomState extends State<Room> {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: h * .2 / 1.5,
-                  width: w * 2 / 1.5,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.white.withOpacity(.10)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Living Room",
-                          style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 1,
-                              fontSize: h * .03,
-                              fontWeight: FontWeight.w500),
-                        ),
-                        Text(
-                          "4 device",
-                          style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 1,
-                              fontSize: h * .02,
-                              fontWeight: FontWeight.w400),
-                        ),
-                      ],
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LivingRoom()));
+                  },
+                  child: Container(
+                    height: h * .2 / 1.5,
+                    width: w * 2 / 1.5,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white.withOpacity(.10)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Living Room",
+                            style: TextStyle(
+                                color: Colors.white,
+                                letterSpacing: 1,
+                                fontSize: h * .03,
+                                fontWeight: FontWeight.w500),
+                          ),
+                          Text(
+                            "4 device",
+                            style: TextStyle(
+                                color: Colors.white,
+                                letterSpacing: 1,
+                                fontSize: h * .02,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -94,35 +101,41 @@ class _RoomState extends State<Room> {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: h * .2 / 1.5,
-                  width: w * 2 / 1.5,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.white.withOpacity(.10)),
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "BedRoom",
-                          style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 1,
-                              fontSize: h * .03,
-                              fontWeight: FontWeight.w500),
-                        ),
-                        Text(
-                          "2 device",
-                          style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 1,
-                              fontSize: h * .02,
-                              fontWeight: FontWeight.w400),
-                        ),
-                      ],
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LivingRoom()));
+                  },
+                  child: Container(
+                    height: h * .2 / 1.5,
+                    width: w * 2 / 1.5,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white.withOpacity(.10)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "BedRoom",
+                            style: TextStyle(
+                                color: Colors.white,
+                                letterSpacing: 1,
+                                fontSize: h * .03,
+                                fontWeight: FontWeight.w500),
+                          ),
+                          Text(
+                            "2 device",
+                            style: TextStyle(
+                                color: Colors.white,
+                                letterSpacing: 1,
+                                fontSize: h * .02,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
